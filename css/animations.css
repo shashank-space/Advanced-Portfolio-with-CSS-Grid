@@ -1,0 +1,313 @@
+/* =========================
+   GLOBAL TRANSITIONS
+========================= */
+
+*{
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+/* =========================
+   FADE IN UP ANIMATION
+========================= */
+
+@keyframes fadeInUp{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(30px);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+/* =========================
+   FADE IN ANIMATION
+========================= */
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+    }
+
+    to{
+        opacity:1;
+    }
+}
+
+/* =========================
+   SCALE IN ANIMATION
+========================= */
+
+@keyframes scaleIn{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            scale(0.8);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            scale(1);
+    }
+}
+
+/* =========================
+   BOUNCE ANIMATION
+========================= */
+
+@keyframes bounce{
+
+    0%,
+    100%{
+
+        transform:
+            translateY(0);
+    }
+
+    50%{
+
+        transform:
+            translateY(-10px);
+    }
+}
+
+/* =========================
+   ROTATE ANIMATION
+========================= */
+
+@keyframes rotateIn{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            rotate(-20deg);
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            rotate(0);
+    }
+}
+
+/* =========================
+   PROFILE IMAGE ANIMATION
+========================= */
+
+.profile-image{
+
+    animation:
+        scaleIn 1s ease;
+}
+
+/* Hover Animation */
+
+.profile-image:hover{
+
+    transform:
+        scale(1.05);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   SECTION ANIMATION
+========================= */
+
+section{
+
+    animation:
+        fadeInUp 0.8s ease;
+}
+
+/* =========================
+   PROJECT CARD ANIMATION
+========================= */
+
+.project-card{
+
+    animation:
+        fadeInUp 0.8s ease forwards;
+
+    opacity:0;
+}
+
+/* Stagger Effect */
+
+.project-card:nth-child(1){
+
+    animation-delay:0.2s;
+}
+
+.project-card:nth-child(2){
+
+    animation-delay:0.4s;
+}
+
+.project-card:nth-child(3){
+
+    animation-delay:0.6s;
+}
+
+/* Hover Animation */
+
+.project-card:hover{
+
+    transform:
+        translateY(-10px);
+
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   SKILL CARD ANIMATION
+========================= */
+
+.skill-item{
+
+    animation:
+        fadeIn 1s ease;
+}
+
+.skill-item:hover{
+
+    transform:
+        translateY(-8px)
+        scale(1.05);
+}
+
+/* =========================
+   BUTTON ANIMATION
+========================= */
+
+.submit-button,
+.project-card__button,
+#dark-mode-button{
+
+    transition:
+        transform 0.3s ease,
+        opacity 0.3s ease;
+}
+
+.submit-button:hover,
+.project-card__button:hover,
+#dark-mode-button:hover{
+
+    transform:
+        translateY(-3px);
+
+    opacity:0.9;
+}
+
+/* =========================
+   GALLERY IMAGE ANIMATION
+========================= */
+
+.gallery-grid img{
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.gallery-grid img:hover{
+
+    transform:
+        scale(1.05);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.25);
+}
+
+/* =========================
+   NAVIGATION HOVER EFFECT
+========================= */
+
+.navigation-item a{
+
+    transition:
+        color 0.3s ease;
+}
+
+.navigation-item a:hover{
+
+    color:#06b6d4;
+}
+
+/* =========================
+   DARK MODE BUTTON BOUNCE
+========================= */
+
+#dark-mode-button:hover{
+
+    animation:
+        bounce 0.6s ease;
+}
+
+/* =========================
+   SCROLL REVEAL CLASSES
+========================= */
+
+.hidden{
+
+    opacity:0;
+
+    transform:
+        translateY(40px);
+}
+
+.show{
+
+    opacity:1;
+
+    transform:
+        translateY(0);
+
+    transition:
+        all 0.8s ease;
+}
+
+/* =========================
+   GALLERY TITLE ANIMATION
+========================= */
+
+.gallery-section .section-title{
+
+    animation:
+        rotateIn 1s ease;
+}
+
+/* =========================
+   FOOTER FADE
+========================= */
+
+.portfolio-footer{
+
+    animation:
+        fadeIn 1.2s ease;
+}

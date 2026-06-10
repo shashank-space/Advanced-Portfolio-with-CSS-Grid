@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Advanced Portfolio | Shashank Shekhar Prakash</title>
+
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="portfolio-header">
+
+        <nav class="navigation-bar">
+
+            <div class="portfolio-logo">
+                <h1>Shashank Shekhar Prakash</h1>
+            </div>
+
+            <ul class="navigation-list">
+
+                <li class="navigation-item">
+                    <a href="#about-section">About</a>
+                </li>
+
+                <li class="navigation-item">
+                    <a href="#skills-section">Skills</a>
+                </li>
+
+                <li class="navigation-item">
+                    <a href="#projects-section">Projects</a>
+                </li>
+
+                <li class="navigation-item">
+                    <a href="#gallery-section">Gallery</a>
+                </li>
+
+                <li class="navigation-item">
+                    <a href="#contact-section">Contact</a>
+                </li>
+
+            </ul>
+
+            <button id="dark-mode-button">
+                🌙 Dark Mode
+            </button>
+
+        </nav>
+
+    </header>
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+
+    <main class="portfolio-main-content">
+
+        <!-- =========================
+             ABOUT SECTION
+        ========================== -->
+
+        <section id="about-section" class="about-section">
+
+            <h2 class="section-title">
+                About Me
+            </h2>
+
+            <img
+                src="screenshots/mypic.jpg"
+                alt="Profile Image"
+                class="profile-image"
+            >
+
+            <div class="about-description">
+
+                <h3>
+                    Hello! I am Shashank Shekhar Prakash,
+                    a B.Tech CSE student passionate about
+                    Web Development.
+                </h3>
+
+                <p>
+                    I enjoy creating responsive websites,
+                    solving coding problems, and building
+                    real-world projects.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+             SKILLS SECTION
+        ========================== -->
+
+        <section id="skills-section" class="skills-section">
+
+            <h2 class="section-title">
+                My Skills
+            </h2>
+
+            <ul class="skills-list">
+
+                <li class="skill-item">HTML5</li>
+                <li class="skill-item">CSS3</li>
+                <li class="skill-item">JavaScript</li>
+                <li class="skill-item">Java</li>
+                <li class="skill-item">GitHub</li>
+                <li class="skill-item">python</li>
+                <li class="skill-item">figma</li>
+
+            </ul>
+
+        </section>
+
+        <!-- =========================
+             PROJECTS SECTION
+        ========================== -->
+
+        <section id="projects-section" class="projects-section">
+
+            <h2 class="section-title">
+                My Projects
+            </h2>
+
+            <div class="projects-container">
+
+                <!-- BEM Example -->
+
+                <div class="project-card project-card--featured">
+
+                    <h3 class="project-card__title">
+                        Personal Portfolio Website
+                    </h3>
+
+                    <p class="project-card__description">
+                        A responsive portfolio website
+                        built using HTML, CSS and JavaScript
+                        featuring dark mode, animations,
+                        CSS Grid and Flexbox.
+                    </p>
+
+                    <a
+                        href="https://github.com/shashank-space"
+                        target="_blank"
+                        class="project-card__button">
+                        View Project
+                    </a>
+
+                </div>
+
+                <div class="project-card">
+
+                    <h3 class="project-card__title">
+                        E-commerce Landing Page
+                    </h3>
+
+                    <p class="project-card__description">
+                        A responsive e-commerce landing page
+                        built with modern web technologies.
+                    </p>
+
+                    <a
+                        href="https://github.com/shashank-space/E-commerce-Product-Landing-Page"
+                        target="_blank"
+                        class="project-card__button">
+                        View Project
+                    </a>
+
+                </div>
+
+                <div class="project-card">
+
+                    <h3 class="project-card__title">
+                        Currency Converter
+                    </h3>
+
+                    <p class="project-card__description">
+                        Currency conversion application
+                        using exchange rate APIs and
+                        dynamic flag updates.
+                    </p>
+
+                    <a
+                        href="https://github.com/shashank-space/Currency-Converter"
+                        target="_blank"
+                        class="project-card__button">
+                        View Project
+                    </a>
+
+                </div>
+
+                <div class="project-card">
+
+                    <h3 class="project-card__title">
+                        Calculator
+                    </h3>
+
+                    <p class="project-card__description">
+                        A simple calculator application
+                        with basic arithmetic operations.
+                    </p>
+
+                    <a
+                        href="https://github.com/shashank-space/Calculator_Html_CSS_JS"
+                        target="_blank"
+                        class="project-card__button">
+                        View Project
+                    </a>
+
+                </div>
+
+                 <div class="project-card">
+
+                    <h3 class="project-card__title">
+                        Tic Tac Toe
+                    </h3>
+
+                    <p class="project-card__description">
+                        A web-based tic tac toe game
+                        with interactive UI and game logic.
+                    </p>
+
+                    <a
+                        href="https://github.com/shashank-space/Tic-Tac-Toe"
+                        target="_blank"
+                        class="project-card__button">
+                        View Project
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =========================
+             IMAGE GALLERY SECTION
+             CSS GRID REQUIREMENT
+        ========================== -->
+
+        <section id="gallery-section" class="gallery-section">
+
+            <h2 class="section-title">
+                Project Gallery
+            </h2>
+
+            <div class="gallery-grid">
+
+            <div class="gallery-item">
+                <img src="screenshots/portfolio.png" alt="Portfolio Website">
+                <h3>Portfolio Website</h3>
+            </div>
+
+            <div class="gallery-item">
+                <img src="screenshots/E-commerse web.png" alt="E-commerce Website">
+                <h3>E-commerce Landing Page</h3>
+            </div>
+
+            <div class="gallery-item">
+                 <img src="screenshots/currency convertor.png" alt="Currency Converter">
+                 <h3>Currency Converter</h3>
+            </div>
+
+            <div class="gallery-item">
+                <img src="screenshots/tic-tac-toe.png" alt="Tic Tac Toe">
+                <h3>Tic Tac Toe</h3>
+            </div>
+
+            <div class="gallery-item">
+                <img src="screenshots/rockpaperscisssors.png" alt="Rock Paper Scissors">
+                <h3>Rock Paper Scissors</h3>
+            </div>
+
+             <div class="gallery-item">
+                <img src="screenshots/Calculator.png" alt="Calculator">
+                <h3>Calculator</h3>
+            </div>
+
+        </div>
+
+</section>
+
+        </section>
+
+        <!-- =========================
+             CONTACT SECTION
+        ========================== -->
+
+        <section id="contact-section" class="contact-section">
+
+            <h2 class="section-title">
+                Contact Me
+            </h2>
+
+            <form
+                action="https://formspree.io/f/mzdwynbp"
+                method="POST"
+                class="contact-form">
+
+                <label for="user-name">
+                    Name
+                </label>
+
+                <input
+                    type="text"
+                    id="user-name"
+                    name="user-name"
+                    class="form-input"
+                    required
+                >
+
+                <label for="user-email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="user-email"
+                    name="user-email"
+                    class="form-input"
+                    required
+                >
+
+                <label for="user-message">
+                    Message
+                </label>
+
+                <textarea
+                    id="user-message"
+                    name="user-message"
+                    class="form-textarea"
+                    rows="5"
+                    required>
+                </textarea>
+
+                <button
+                    type="submit"
+                    class="submit-button">
+                    Send Message
+                </button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="portfolio-footer">
+
+        <p class="footer-text">
+            © 2026 Shashank Shekhar Prakash.
+            Built using HTML, CSS and JavaScript.
+        </p>
+
+        <p>
+
+            <a
+                href="https://github.com/shashank-space"
+                target="_blank"
+                class="footer-link">
+                GitHub
+            </a>
+
+            |
+
+            <a
+                href="mailto:shashankshekharprakash01@gmail.com"
+                class="footer-link">
+                Email
+            </a>
+
+        </p>
+
+    </footer>
+
+    <!-- JavaScript -->
+
+    <script src="theme-switcher.js"></script>
+
+</body>
+
+</html>
